@@ -20,16 +20,6 @@ class EventEmitter {
             listeners.forEach((listener) => listener(data));
         }
     }
-
-    unsubscribe(topic: string, listenerToRemove: Callback): void {
-        const listeners = this.topics.get(topic);
-        if (listeners) {
-            this.topics.set(
-                topic,
-                listeners.filter((listener) => listener !== listenerToRemove)
-            );
-        }
-    }
 }
 
 export default EventEmitter;
