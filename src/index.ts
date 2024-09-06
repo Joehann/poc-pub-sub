@@ -21,7 +21,7 @@ const publisher = new Publisher(eventEmitter);
 
 publisher.publish(NotificationTopic.Anniversaires, { message: "C'est l'anniversaire de Bowser aujourd'hui !" });
 publisher.publish(NotificationTopic.Promotions, { offre: "50% de réduction sur les champignons !" });
-publisher.publish(NotificationTopic.Evenements, { event: "Piscine à boules pour tout le monde !!!" });
+publisher.publish(NotificationTopic.Evenements, { event: "Piscine à boules Party !!!" });
 
 
 
